@@ -49,6 +49,6 @@ if str(option3) not in title:
     "Put the memory, in GB, into the title—I predict that it'll sell for $10 more if you do."
 
 if hasdescription == 0:
-    "You didn't make a description! I predict that the MacBook will sell for $11 more if you include one."
+    "You didn't make a description! I predict that the MacBook will sell for $18 more if you include one."
 
 "Also, aim for a fleshed out description: buyers like it when they're longer."
