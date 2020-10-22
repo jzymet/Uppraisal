@@ -35,20 +35,17 @@ if str(option1) in title: yearintitle = 1
 if str(option2) in title: sizeintitle = 1
 if str(option3) in title: memoryintitle = 1
 
-predprice = -276300 + 224 + 136.3*option1 + 154*option2 + 0.6*option3 + (-56)*yearintitle + 44*sizeintitle + 84*memoryintitle + 61*hasdescription
+predprice = -273800 + 224 + 135*option1 + 147*option2 + 0.6*option3 + 63*sizeintitle + 10*memoryintitle + 11*hasdescription
 "Predicted price for your MacBook: $", predprice
 
 "ADVICE"
-if str(option3) not in title:
-    "Put the memory, in GB, into the title—I predict that it'll sell for $84 more if you do."
-
 if str(option2) not in title:
-    "Put the screen size into the title—I predict that it'll sell for $44 more  if you do!"
+    "Put the screen size into the title—I predict that it'll sell for $63 more if you do!"
 
-if str(option1) in title:
-    "You might want to leave the year of manufacture out of the title—in particular, if it's before 2013. Overall, I predict it will sell for $56 more if you leave it out."
+if str(option3) not in title:
+    "Put the memory, in GB, into the title—I predict that it'll sell for $10 more if you do."
 
 if hasdescription == 0:
-    "You didn't make a description! I predict that the MacBook will sell for $61 more if you include one."
+    "You didn't make a description! I predict that the MacBook will sell for $11 more if you include one."
 
 "Also, aim for a fleshed out description: buyers like it when they're longer."
