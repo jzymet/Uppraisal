@@ -38,7 +38,7 @@ if str(option3) in title: memoryintitle = 1
 if title == "" and option1 == 2011:
     predprice = 0
 else:
-    predprice = -273800 + 224 + 135*option1 + 147*option2 + 0.6*option3 + 63*sizeintitle + 10*memoryintitle + 11*hasdescription
+    predprice = -273800 + 224 + 135*option1 + 147*option2 + 0.6*option3 + 63*sizeintitle + 10*memoryintitle + 18*hasdescription
 "Predicted price for your MacBook: $", predprice
 
 "ADVICE"
