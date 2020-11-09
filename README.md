@@ -11,3 +11,7 @@ Solution
 -
 
 My solution to this problem is an app that helps eBay sellers get the most for their MacBook Pro laptops. It offers advice for improving their listing titles and descriptions, together with an estimate of how much more they would receive for their laptops if they take the advice.
+
+Demo
+-
+See [here](https://docs.google.com/presentation/d/1mcprzRBa3owQ9Xrx9ByNCmMEQ23Mzk-FyndLD1KpxIU/edit#slide=id.g9c1e6b6e08_0_214).
