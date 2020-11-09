@@ -1,4 +1,6 @@
-# Uppraisal: Optimize your sales pitch to get the maximum return.
+# Uppraisal
+
+##Optimize your sales pitch to get the maximum return.
 
 This was the project that I completed as a Data Science Fellow at Insight. **Bear with me as I update my GitHub over the next few days to reflect the fuller and more up-to-date version of it.** Thanks!
 
