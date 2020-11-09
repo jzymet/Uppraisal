@@ -5,7 +5,7 @@
 Problem
 -
 
-At present day, eBay sellers have no way of knowing whether their listing titles and descriptions are helping them to earn the highest possible return for their product. This impacts sellers who have few other ways to stand out — for example, sellers of MacBook Pro laptops, which all look very similar and are generally non-customizable.
+eBay sellers have no way of knowing whether their listing titles and descriptions are helping them to earn the highest possible return for their product. This impacts sellers who have few other ways to stand out — for example, sellers of MacBook Pro laptops, which all look very similar and are generally non-customizable.
 
 Solution
 -
