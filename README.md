@@ -11,6 +11,9 @@ Solution
 -
 
 My solution to this problem is an app that helps eBay sellers get the most for their MacBook Pro laptops. It offers advice for improving their listing titles and descriptions, together with an estimate of how much more they would receive for their laptops if they take the advice.
+- Designed Streamlit web interface, deployed on Heroku, that delivers text improvement advice that appears and disappears according to a string-matching system monitoring user text edits
+- Estimated price increase with a Lasso regression model of 10K scraped eBay listings, with hand-engineered and LDA-derived features pertaining to title, description, and Macbook specs
+- Demonstrated that model surpasses specs-only baseline according to R², RMSE, and MAPE
 
 Demo
 -
