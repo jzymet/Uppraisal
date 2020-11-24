@@ -4,6 +4,11 @@ import pandas as pd
 
 st.title("Selling your MacBook Pro?")
 
+#set checks for whether various specs are mentioned in the title to 0
+yearintitle = 0
+sizeintitle = 0
+memoryintitle = 0
+
 #fill in listing title and description
 
 title = st.text_input("Put the title of your listing here:")
@@ -28,10 +33,6 @@ option3 = st.selectbox(
     "What about memory (in GB)?", specsdict['memory'])
 
 #check whether various specs are mentioned in the title
-
-yearintitle = 0
-sizeintitle = 0
-memoryintitle = 0
 
 if " " + str(option1) in title: yearintitle = 1
 if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
