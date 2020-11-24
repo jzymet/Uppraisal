@@ -1,6 +1,6 @@
 ## UPPRAISAL: Optimize your sales pitch to get the maximum return.
 
-[Nov. 15]: This was the project that I completed as a Data Science Fellow at Insight. I'm currently updating this repo actively to reflect the fuller and more up-to-date version of it. Stay tuned.
+[Nov. 15]: This was the project that I completed as a Data Science Fellow at Insight. I'm currently updating this repo to reflect the fuller and more up-to-date version of it. Stay tuned.
 
 Problem
 -
