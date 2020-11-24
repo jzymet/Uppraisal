@@ -39,7 +39,7 @@ if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD")
 
 #predicted price according to Lasso model coefficients/whether specs are in title
 
-predprice = -255817 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
+predprice = -255350 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
 "Predicted price for your MacBook: $", predprice
 
 #advice that dis/appears depending on whether specs are mentioned in title
