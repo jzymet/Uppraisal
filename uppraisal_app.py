@@ -34,13 +34,13 @@ option3 = st.selectbox(
 
 #check whether various specs are mentioned in the title
 
-if " " + str(option1) in title: yearintitle = 1
-if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
-if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
+if str(option1) in title: yearintitle = 1
+if str(option2) in title: sizeintitle = 1
+if str(option3) in title: memoryintitle = 1
+#if " " + str(option1) in title: yearintitle = 1
+#if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
+#if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
 
-print(yearintitle)
-print(sizeintitle)
-print(memoryintitle)
 
 #predicted price according to Lasso model coefficients/whether specs are in title
 
