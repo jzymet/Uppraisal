@@ -34,20 +34,17 @@ option3 = st.selectbox(
 
 #check whether various specs are mentioned in the title
 
-if str(option1) in title: yearintitle = 1
-if str(option2) in title: sizeintitle = 1
-if str(option3) in title: memoryintitle = 1
-#if " " + str(option1) in title: yearintitle = 1
-#if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
-#if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
-
+#if str(option1) in title: yearintitle = 1
+#if str(option2) in title: sizeintitle = 1
+#if str(option3) in title: memoryintitle = 1
+if " " + str(option1) in title: yearintitle = 1
+if (" "+str(option2)+" " in title) or (" "+str(option2)+"in" in title) or (" "+str(option2)+"-in" in title) or (" "+str(option2)+"." in title) or (" "+str(option2)+"'" in title): sizeintitle = 1
+if (" "+str(option3)+" " in title) or (" "+str(option3)+"GB" in title) or (" "+str(option3)+"SSD" in title): memoryintitle = 1
 
 #predicted price according to Lasso model coefficients/whether specs are in title
 
 predprice = -255350 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
 "Predicted price for your MacBook: $", predprice
-
-" " + str(option2) + "in"
 
 #advice that dis/appears depending on whether specs are mentioned in title
 
