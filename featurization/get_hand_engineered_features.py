@@ -94,8 +94,8 @@ def get_memory_mention_features(laptopData: DataFrame) -> DataFrame:
 
 def get_adjective_mention_features(laptopData: DataFrame) -> DataFrame:
     """
-    reads in laptopData DataFrame, returns augmented DataFrame with columns checking for whether laptop storage capacity
-    is mentioned in the title and description
+    reads in laptopData DataFrame, returns augmented DataFrame with columns checking for various adjectives
+    in the title and description
     :param laptopData: dataframe
     """
 
@@ -145,8 +145,7 @@ def get_adjective_mention_features(laptopData: DataFrame) -> DataFrame:
 
 def get_length_features(laptopData: DataFrame) -> DataFrame:
     """
-    reads in laptopData DataFrame, returns augmented DataFrame with columns checking for whether laptop storage capacity
-    is mentioned in the title and description
+    reads in laptopData DataFrame, returns augmented DataFrame with columns counting length of the title and description
     :param laptopData: dataframe
     """
 
