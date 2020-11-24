@@ -47,6 +47,8 @@ if str(option3) in title: memoryintitle = 1
 predprice = -255350 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
 "Predicted price for your MacBook: $", predprice
 
+" " + string(option2) + "in"
+
 #advice that dis/appears depending on whether specs are mentioned in title
 
 "ADVICE"
