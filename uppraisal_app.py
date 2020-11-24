@@ -34,9 +34,6 @@ option3 = st.selectbox(
 
 #check whether various specs are mentioned in the title
 
-#if str(option1) in title: yearintitle = 1
-#if str(option2) in title: sizeintitle = 1
-#if str(option3) in title: memoryintitle = 1
 if " " + str(option1) in title: yearintitle = 1
 if (" "+str(option2)+" " in title) or (" "+str(option2)+"in" in title) or (" "+str(option2)+"-in" in title) or (" "+str(option2)+"." in title) or (" "+str(option2)+"'" in title): sizeintitle = 1
 if (" "+str(option3)+" " in title) or (" "+str(option3)+"GB" in title) or (" "+str(option3)+"SSD" in title): memoryintitle = 1
