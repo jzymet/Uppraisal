@@ -4,19 +4,15 @@ import pandas as pd
 
 st.title("Selling your MacBook Pro?")
 
-#img = Image.open("macbook.jpg")
-#img.show()
+#fill in listing title and description
 
-yearintitle = 0
-sizeintitle = 0
-memoryintitle = 0
 title = st.text_input("Put the title of your listing here:")
 
-hasdescription = 0
 if st.checkbox('Add description?'):
-    hasdescription = 1
     description = st.text_area("Have at it:")
-    
+
+#fill in laptop specs
+
 specsdict = {
     "year": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
     "size": [13, 14, 15, 16, 17],
@@ -31,12 +27,22 @@ option2 = st.selectbox(
 option3 = st.selectbox(
     "What about memory (in GB)?", specsdict['memory'])
 
+#check whether various specs are mentioned in the title
+
+yearintitle = 0
+sizeintitle = 0
+memoryintitle = 0
+
 if " " + str(option1) in title: yearintitle = 1
 if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
 if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
 
+#predicted price according to Lasso model coefficients/whether specs are in title
+
 predprice = -255817 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
 "Predicted price for your MacBook: $", predprice
+
+#advice that dis/appears depending on whether specs are mentioned in title
 
 "ADVICE"
 
