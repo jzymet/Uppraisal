@@ -47,10 +47,10 @@ predprice = -255350 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle
 
 "ADVICE"
 
-if memoryintitle == 1:
+if memoryintitle == 0:
     "Put the memory, in GB, into the title—I predict that it'll sell for $43 more if you do."
 
-if sizeintitle == 1:
+if sizeintitle == 0:
     "Put the screen size into the title—I predict that it'll sell for $42 more if you do!"
 
 if yearintitle == 1:
