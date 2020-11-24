@@ -32,6 +32,9 @@ option2 = st.selectbox(
 option3 = st.selectbox(
     "What about memory (in GB)?", specsdict['memory'])
 
+option4 = st.selectbox(
+    "What about memory (in GB)?", specsdict['memory'])
+
 #check whether various specs are mentioned in the title
 
 if str(option1) in title: yearintitle = 1
