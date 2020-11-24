@@ -4,17 +4,17 @@ import pandas as pd
 
 st.title("Selling your MacBook Pro?")
 
-#set checks for whether various specs are mentioned in the title to 0
-yearintitle = 0
-sizeintitle = 0
-memoryintitle = 0
-
 #fill in listing title and description
 
 title = st.text_input("Put the title of your listing here:")
 
 if st.checkbox('Add description?'):
     description = st.text_area("Have at it:")
+
+#set checks for whether various specs are mentioned in the title to 0
+yearintitle = 0
+sizeintitle = 0
+memoryintitle = 0
 
 #fill in laptop specs
 
@@ -37,6 +37,10 @@ option3 = st.selectbox(
 if " " + str(option1) in title: yearintitle = 1
 if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
 if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
+
+print(yearintitle)
+print(sizeintitle)
+print(memoryintitle)
 
 #predicted price according to Lasso model coefficients/whether specs are in title
 
