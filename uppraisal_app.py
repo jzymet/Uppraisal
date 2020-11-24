@@ -47,13 +47,13 @@ predprice = -255350 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle
 
 "ADVICE"
 
-if str(option3) not in title:
+if memoryintitle == 1:
     "Put the memory, in GB, into the title—I predict that it'll sell for $43 more if you do."
 
-if str(option2) not in title:
+if sizeintitle == 1:
     "Put the screen size into the title—I predict that it'll sell for $42 more if you do!"
 
-if str(option1) not in title:
+if yearintitle == 1:
     "This is subtle, but if you leave the year out of the title, I predict it'll sell for around $4 more."
 
 "Also, aim for a fleshed out description that makes you look human! Don't load it up with legalese."
