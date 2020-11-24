@@ -20,7 +20,7 @@ if st.checkbox('Add description?'):
 specsdict = {
     "year": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
     "size": [13, 14, 15, 16, 17],
-    "memory": [120, 250, 500, 750, 1000]}
+    "memory": [120, 250, 500]}
 
 option1 = st.selectbox(
     "What year was your MacBook manufactured?", specsdict['year'])
@@ -31,24 +31,22 @@ option2 = st.selectbox(
 option3 = st.selectbox(
     "What about memory (in GB)?", specsdict['memory'])
 
-if str(option1) in title: yearintitle = 1
-if str(option2) in title: sizeintitle = 1
-if str(option3) in title: memoryintitle = 1
+if " " + str(option1) in title: yearintitle = 1
+if (" "+str(option2)+" ") or (" "+str(option2)+"in") or (" "+str(option2)+"-in") or (" "+str(option2)+".") or (" "+str(option2)+"'") in title: sizeintitle = 1
+if (" "+str(option3)+" ") or (" "+str(option3)+"GB") or (" "+str(option3)+"SSD") in title: memoryintitle = 1
 
-if option1 == 2011:
-    predprice = 0
-else:
-    predprice = -273800 + 224 + 135*option1 + 147*option2 + 0.6*option3 + 63*sizeintitle + 10*memoryintitle + 18*hasdescription
+predprice = -255817 + 126*option1 + 139*option2 + 0.6*option3 + (-4)*yearintitle + 42*sizeintitle + 43*memoryintitle
 "Predicted price for your MacBook: $", predprice
 
 "ADVICE"
-if str(option2) not in title:
-    "Put the screen size into the title—I predict that it'll sell for $63 more if you do!"
 
 if str(option3) not in title:
-    "Put the memory, in GB, into the title—I predict that it'll sell for $10 more if you do."
+    "Put the memory, in GB, into the title—I predict that it'll sell for $43 more if you do."
 
-if hasdescription == 0:
-    "You didn't make a description! I predict that the MacBook will sell for $18 more if you include one."
+if str(option2) not in title:
+    "Put the screen size into the title—I predict that it'll sell for $42 more if you do!"
 
-"Also, aim for a fleshed out description: buyers like it when they're longer."
+if str(option1) not in title:
+    "This is subtle, but if you leave the year out of the title, I predict it'll sell for around $5 more."
+
+"Also, aim for a fleshed out description that makes you look human! Don't load it up with legalese."
