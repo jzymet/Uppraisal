@@ -1,4 +1,6 @@
-# Uppraisal: Optimize your sales pitch to get the maximum return.
+# Uppraisal
+
+Optimize your sales pitch to get the maximum return.
 
 Problem
 -
