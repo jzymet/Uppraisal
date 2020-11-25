@@ -11,6 +11,7 @@ from sklearn.metrics import mean_squared_error
 def model(laptopData: DataFrame):
     ###CURRENTLY UNDER REFINEMENT
     #to do: break into construct_model and validate_model
+    #to do: illustrate in jupyter notebook
 
     #drop irrelevant columns
     laptopData = laptopData.drop('description', axis=1)

@@ -1,7 +1,5 @@
 ## Uppraisal: Optimize your sales pitch to get the maximum return.
 
-[Nov. 24]: This was the project that I completed as a Data Science Fellow at Insight. I'm currently updating this repo to reflect the fuller and more up-to-date version of it.
-
 Problem
 -
 
@@ -18,3 +16,7 @@ My solution to this problem is an app that helps eBay sellers get the most for t
 Demo
 -
 See [here](https://docs.google.com/presentation/d/1mcprzRBa3owQ9Xrx9ByNCmMEQ23Mzk-FyndLD1KpxIU/edit#slide=id.g9c1e6b6e08_0_214).
+
+Web App
+-
+See [here](https://uppraisal.herokuapp.com).
