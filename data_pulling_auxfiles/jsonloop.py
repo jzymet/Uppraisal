@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-#function to write to files json data pulled from eBay API
+#function to write json data pulled from eBay API to a bunch of files
 
 save_path = '/Users/jzymet/itemSpecifics3/'
 with open("getItemrequest.txt") as i:
